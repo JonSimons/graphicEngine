@@ -62,7 +62,7 @@ Matrix Line_drawings_3D::eyePointTrans(const Vector3D &eyepoint) {
     double r,theta,phi;
     toPolar(eyepoint,theta,phi,r);
     Matrix eyePointTrans;
-    eyePointTrans=rotateZ(-M_PI/(2)-theta)*rotateX(-phi)*translate(Vector3D::vector(0,0,-r));
+    eyePointTrans=rotateZ(-M_PI/(2.0)-theta)*rotateX(-phi)*translate(Vector3D::vector(0,0,-r));
     return eyePointTrans;
 
 }
@@ -85,7 +85,7 @@ Lines2D Line_drawings_3D::doProjection(const Figures3D& figures3D) {
             }
             if(face.point_indexes.size()>2){
                 lines_2D line2D;
-                line2D.p1=doProjection(figure.points[face.point_indexes[face.point_indexes.size()]],1.0);
+                line2D.p1=doProjection(figure.points[face.point_indexes[face.point_indexes.size()-1]],1.0);
                 line2D.p2=doProjection(figure.points[face.point_indexes[0]],1.0);
                 line2D.color=figure.color;
                 lines2D.push_back(line2D);
@@ -96,18 +96,18 @@ Lines2D Line_drawings_3D::doProjection(const Figures3D& figures3D) {
 }
 Point2D Line_drawings_3D::doProjection(const Vector3D &point, const double d) {
     Point2D point2D;
-    point2D.x=d*point.x/-point.z;
-    point2D.y=d*point.y/-point.z;
+    point2D.x=d*point.x/(-point.z);
+    point2D.y=d*point.y/(-point.z);
     return point2D;
 }
-void Line_drawings_3D::fixFigure(Figures3D &figures3D, Figure &figuur, const ini::Configuration &configuration, int figureNr,const Vector3D eyePoint) {
+void Line_drawings_3D::fixFigure(Figures3D &figures3D, Figure &figuur, const ini::Configuration &configuration, int figureNr) {
     vector<double> center=configuration["Figure"+to_string(figureNr)]["center"].as_double_tuple_or_die();
     Vector3D toTranslate=Vector3D::point(center[0],center[1],center[2]);
     Matrix translatieMatrix=scaleFigure(configuration["Figure"+to_string(figureNr)]["scale"].as_double_or_die());
-    translatieMatrix*=rotateX(configuration["Figure"+to_string(figureNr)]["rotateX"].as_int_or_die());
-    translatieMatrix*=rotateY(configuration["Figure"+to_string(figureNr)]["rotateY"].as_int_or_die());
-    translatieMatrix*=rotateZ(configuration["Figure"+to_string(figureNr)]["rotateZ"].as_int_or_die());
-    translatieMatrix*=eyePointTrans(eyePoint);
+    translatieMatrix*=rotateX(configuration["Figure"+to_string(figureNr)]["rotateX"].as_double_or_die()/180*M_PI);
+    translatieMatrix*=rotateY(configuration["Figure"+to_string(figureNr)]["rotateY"].as_double_or_die()/180*M_PI);
+    translatieMatrix*=rotateZ(configuration["Figure"+to_string(figureNr)]["rotateZ"].as_double_or_die()/180*M_PI);
+
     translatieMatrix*=translate(toTranslate);
     applyTransformation(figuur,translatieMatrix);
     figures3D.push_back(figuur);

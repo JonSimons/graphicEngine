@@ -31,8 +31,7 @@ img::EasyImage generate_image(const ini::Configuration &configuration)
     if(type=="Wireframe"){
         Line_drawings_3D result;
         Figures3D figures3D;
-        vector<double>eyePoints=configuration["General"]["eye"].as_double_tuple_or_die();
-        const Vector3D eyePoint=Vector3D::point(eyePoints[0],eyePoints[1],eyePoints[2]);
+
         int nrFigures= configuration["General"]["nrFigures"].as_int_or_die();
         for (int i = 0; i <nrFigures ; ++i) {
             if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="LineDrawing"){
@@ -55,9 +54,16 @@ img::EasyImage generate_image(const ini::Configuration &configuration)
                     }
                     newFigure.faces.push_back(newFace);
                 }
-                result.fixFigure(figures3D,newFigure,configuration,i, eyePoint);
+                result.fixFigure(figures3D,newFigure,configuration,i);
             }
         }
+        vector<double>eyePoints=configuration["General"]["eye"].as_double_tuple_or_die();
+        const Vector3D eyePoint=Vector3D::point(eyePoints[0],eyePoints[1],eyePoints[2]);
+        Matrix eyePointMatrix=result.eyePointTrans(eyePoint);
+        for (Figure& figure:figures3D){
+            result.applyTransformation(figure,eyePointMatrix);
+        }
+
         lines=result.doProjection(figures3D);
     }
 

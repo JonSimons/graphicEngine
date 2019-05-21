@@ -27,7 +27,7 @@ public:
     void toPolar(const Vector3D &point,double &theta,double &phi,double &r);
     Lines2D doProjection(const Figures3D &figures3D);
     Point2D doProjection(const Vector3D &point, const double d);
-    void fixFigure(Figures3D &figures3D,Figure& part,const ini::Configuration& configuration, int figureNr,const Vector3D eyePoint);
+    void fixFigure(Figures3D &figures3D,Figure& part,const ini::Configuration& configuration, int figureNr);
 
 
 };
