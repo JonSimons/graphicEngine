@@ -7,6 +7,7 @@
 #include <stdexcept>
 #include <string>
 #include "Line_drawings_3D.h";
+#include "Figure3D.h"
 
 using namespace std;
 
@@ -28,12 +29,23 @@ img::EasyImage generate_image(const ini::Configuration &configuration)
         Color kleur;kleur.red=rgbKleur[0];kleur.green=rgbKleur[1];kleur.blue=rgbKleur[2];
         lines=drawLSystem(l_system,kleur);
     }
+
     if(type=="Wireframe"){
         Line_drawings_3D result;
         Figures3D figures3D;
 
         int nrFigures= configuration["General"]["nrFigures"].as_int_or_die();
         for (int i = 0; i <nrFigures ; ++i) {
+            if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="Sphere"){
+                const int n=configuration["Figure"+to_string(i)]["n"].as_int_or_die();
+                const double radius=configuration["Figure"+to_string(i)]["scale"].as_double_or_die();
+                Figure newFigure=createBol(radius,n);
+                vector<double> rgbKleur = configuration["Figure"+to_string(i)]["color"].as_double_tuple_or_die();
+                Color kleurlijn;kleurlijn.red=rgbKleur[0];kleurlijn.green=rgbKleur[1];kleurlijn.blue=rgbKleur[2];
+                newFigure.color=kleurlijn;
+                result.fixFigure(figures3D,newFigure,configuration,i);
+
+            }
             if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="LineDrawing"){
                 Figure newFigure;
                 int nrLines=configuration["Figure"+to_string(i)]["nrLines"].as_int_or_die();
