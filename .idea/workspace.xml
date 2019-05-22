@@ -13,9 +13,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Figure3D.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Figure3D.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Figure3D.h" beforeDir="false" afterPath="$PROJECT_DIR$/Figure3D.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figure3D.o" beforeDir="false" afterPath="$PROJECT_DIR$/Figure3D.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine" beforeDir="false" afterPath="$PROJECT_DIR$/engine" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine.cc" beforeDir="false" afterPath="$PROJECT_DIR$/engine.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine.o" beforeDir="false" afterPath="$PROJECT_DIR$/engine.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wireframes/wireframes022.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes022.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wireframes/wireframes023.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes023.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wireframes/wireframes024.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes024.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wireframes/wireframes027.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes027.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wireframes/wireframes028.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes028.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wireframes/wireframes033.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes033.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wireframes/wireframes034.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes034.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wireframes/wireframes035.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes035.bmp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/engine.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+            <state relative-caret-position="570">
+              <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -37,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Line_drawings_3D.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
+            <state relative-caret-position="751">
               <caret line="115" selection-start-line="115" selection-end-line="115" />
             </state>
           </provider>
@@ -46,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Figure3D.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="395" column="25" selection-start-line="395" selection-start-column="25" selection-end-line="395" selection-end-column="25" />
+            <state relative-caret-position="752">
+              <caret line="480" column="4" lean-forward="true" selection-start-line="480" selection-start-column="4" selection-end-line="480" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -55,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Figure3D.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+            <state relative-caret-position="300">
+              <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -92,8 +101,8 @@
   <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="67" />
     <option name="y" value="25" />
-    <option name="width" value="927" />
-    <option name="height" value="1053" />
+    <option name="width" value="928" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -142,15 +151,16 @@
       <updated>1558432187831</updated>
       <workItem from="1558432195300" duration="6541000" />
       <workItem from="1558444766569" duration="3818000" />
-      <workItem from="1558521682298" duration="5534000" />
+      <workItem from="1558521682298" duration="5618000" />
+      <workItem from="1558547336495" duration="4664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15893000" />
+    <option name="totallyTimeSpent" value="20641000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="927" height="1053" extended-state="4" />
+    <frame x="67" y="25" width="928" height="1055" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.476731" />
@@ -192,29 +202,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Figure3D.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Line_drawings_3D.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        <state relative-caret-position="300">
+          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/engine.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+        <state relative-caret-position="570">
+          <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Line_drawings_3D.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Figure3D.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="395" column="25" selection-start-line="395" selection-start-column="25" selection-end-line="395" selection-end-column="25" />
+        <state relative-caret-position="752">
+          <caret line="480" column="4" lean-forward="true" selection-start-line="480" selection-start-column="4" selection-end-line="480" selection-end-column="4" />
         </state>
       </provider>
     </entry>

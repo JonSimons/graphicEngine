@@ -33,19 +33,46 @@ img::EasyImage generate_image(const ini::Configuration &configuration)
     if(type=="Wireframe"){
         Line_drawings_3D result;
         Figures3D figures3D;
-
         int nrFigures= configuration["General"]["nrFigures"].as_int_or_die();
         for (int i = 0; i <nrFigures ; ++i) {
             if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="Sphere"){
                 const int n=configuration["Figure"+to_string(i)]["n"].as_int_or_die();
-                const double radius=configuration["Figure"+to_string(i)]["scale"].as_double_or_die();
-                Figure newFigure=createBol(radius,n);
+                Figure newFigure=createBol(1.0,n);
                 vector<double> rgbKleur = configuration["Figure"+to_string(i)]["color"].as_double_tuple_or_die();
                 Color kleurlijn;kleurlijn.red=rgbKleur[0];kleurlijn.green=rgbKleur[1];kleurlijn.blue=rgbKleur[2];
                 newFigure.color=kleurlijn;
                 result.fixFigure(figures3D,newFigure,configuration,i);
-
             }
+            if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="Cone"){
+                const int n=configuration["Figure"+to_string(i)]["n"].as_int_or_die();
+                const double height=configuration["Figure"+to_string(i)]["height"].as_double_or_die();
+                Figure newFigure=createKegel(n,height);
+                vector<double> rgbKleur = configuration["Figure"+to_string(i)]["color"].as_double_tuple_or_die();
+                Color kleurlijn;kleurlijn.red=rgbKleur[0];kleurlijn.green=rgbKleur[1];kleurlijn.blue=rgbKleur[2];
+                newFigure.color=kleurlijn;
+                result.fixFigure(figures3D,newFigure,configuration,i);
+            }
+            if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="Cylinder"){
+                const int n=configuration["Figure"+to_string(i)]["n"].as_int_or_die();
+                const double height=configuration["Figure"+to_string(i)]["height"].as_double_or_die();
+                Figure newFigure=createCilinder(n,height);
+                vector<double> rgbKleur = configuration["Figure"+to_string(i)]["color"].as_double_tuple_or_die();
+                Color kleurlijn;kleurlijn.red=rgbKleur[0];kleurlijn.green=rgbKleur[1];kleurlijn.blue=rgbKleur[2];
+                newFigure.color=kleurlijn;
+                result.fixFigure(figures3D,newFigure,configuration,i);
+            }
+            if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="Torus"){
+                const double r=configuration["Figure"+to_string(i)]["r"].as_double_or_die();
+                const double R=configuration["Figure"+to_string(i)]["R"].as_double_or_die();
+                const int n=configuration["Figure"+to_string(i)]["n"].as_int_or_die();
+                const int m=configuration["Figure"+to_string(i)]["m"].as_int_or_die();
+                Figure newFigure=createTorus(r,R,n,m);
+                vector<double> rgbKleur = configuration["Figure"+to_string(i)]["color"].as_double_tuple_or_die();
+                Color kleurlijn;kleurlijn.red=rgbKleur[0];kleurlijn.green=rgbKleur[1];kleurlijn.blue=rgbKleur[2];
+                newFigure.color=kleurlijn;
+                result.fixFigure(figures3D,newFigure,configuration,i);
+            }
+
             if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="LineDrawing"){
                 Figure newFigure;
                 int nrLines=configuration["Figure"+to_string(i)]["nrLines"].as_int_or_die();

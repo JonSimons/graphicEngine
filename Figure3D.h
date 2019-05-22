@@ -16,9 +16,9 @@ Figure createOctahedron();
 Figure createIcosahedron();
 Figure Dodecahedron();
 Figure createCilinder(const int n, const double h);
-Figure createKegel();
+Figure createKegel(const int n, const double h);
 Figure createBol(const double radius, const int n);
-Figure createTorus();
+Figure createTorus(const double r, const double R, const int n, const int m);
 
 
 #endif //GRAPHICENGINE_FIGURE3D_H
