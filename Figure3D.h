@@ -14,7 +14,7 @@ Figure createTetrahedron();
 Figure createTetrahedron();
 Figure createOctahedron();
 Figure createIcosahedron();
-Figure Dodecahedron();
+Figure createDodecahedron();
 Figure createCilinder(const int n, const double h);
 Figure createKegel(const int n, const double h);
 Figure createBol(const double radius, const int n);

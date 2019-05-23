@@ -287,7 +287,8 @@ Figure createIcosahedron(){
 
     return icosahedron;
 };
-Figure Dodecahedron(){
+
+Figure createDodecahedron(){
     Figure icosahedron = createIcosahedron();
     Figure dodecahedron;
     for(Face face: icosahedron.faces){
@@ -477,7 +478,25 @@ Figure createBol(const double radius, const int n){
 };
 Figure createTorus(const double r, const double R, const int n, const int m){
     Figure torus;
+    for (int i = 0; i < n; ++i) {
+        double u = 2*i*M_PI/n;
+        for (int j = 0; j < m; ++j) {
+            double v = 2*j*M_PI/m;
+            double x = (R + r*cos(v))*cos(u);
+            double y = (R + r*cos(v))*sin(u);
+            double z = r*sin(v);
 
-    
+            Vector3D point = Vector3D::point(x,y,z);
+            torus.points.push_back(point);
+            Face face;
+
+            face.point_indexes.push_back(i*m+j);
+            face.point_indexes.push_back(((i+1)%n)*m+j);
+            face.point_indexes.push_back(((i+1)%n)*m+(j+1)%m);
+            face.point_indexes.push_back(i*m+(j+1)%m);
+            torus.faces.push_back(face);
+        }
+    }
+
     return torus;
 };

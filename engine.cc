@@ -8,6 +8,7 @@
 #include <string>
 #include "Line_drawings_3D.h";
 #include "Figure3D.h"
+#include "Lsystemen_3D.h"
 
 using namespace std;
 
@@ -35,6 +36,52 @@ img::EasyImage generate_image(const ini::Configuration &configuration)
         Figures3D figures3D;
         int nrFigures= configuration["General"]["nrFigures"].as_int_or_die();
         for (int i = 0; i <nrFigures ; ++i) {
+            if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="3DLSystem"){
+                LParser::LSystem3D l_system;
+                std::ifstream input_stream(configuration["Figure"+to_string(i)]["inputfile"]);
+                input_stream >> l_system;
+                input_stream.close();
+                Figure newFigure=lsysteem3D(l_system,"Figure"+to_string(i));
+                vector<double> rgbKleur = configuration["Figure"+to_string(i)]["color"].as_double_tuple_or_die();
+                Color kleurlijn;kleurlijn.red=rgbKleur[0];kleurlijn.green=rgbKleur[1];kleurlijn.blue=rgbKleur[2];
+                newFigure.color=kleurlijn;
+                result.fixFigure(figures3D,newFigure,configuration,i);
+            }
+            if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="Cube"){
+                Figure newFigure=createCube();
+                vector<double> rgbKleur = configuration["Figure"+to_string(i)]["color"].as_double_tuple_or_die();
+                Color kleurlijn;kleurlijn.red=rgbKleur[0];kleurlijn.green=rgbKleur[1];kleurlijn.blue=rgbKleur[2];
+                newFigure.color=kleurlijn;
+                result.fixFigure(figures3D,newFigure,configuration,i);
+            }
+            if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="Tetrahedron"){
+                Figure newFigure=createTetrahedron();
+                vector<double> rgbKleur = configuration["Figure"+to_string(i)]["color"].as_double_tuple_or_die();
+                Color kleurlijn;kleurlijn.red=rgbKleur[0];kleurlijn.green=rgbKleur[1];kleurlijn.blue=rgbKleur[2];
+                newFigure.color=kleurlijn;
+                result.fixFigure(figures3D,newFigure,configuration,i);
+            }
+            if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="Octahedron"){
+                Figure newFigure=createOctahedron();
+                vector<double> rgbKleur = configuration["Figure"+to_string(i)]["color"].as_double_tuple_or_die();
+                Color kleurlijn;kleurlijn.red=rgbKleur[0];kleurlijn.green=rgbKleur[1];kleurlijn.blue=rgbKleur[2];
+                newFigure.color=kleurlijn;
+                result.fixFigure(figures3D,newFigure,configuration,i);
+            }
+            if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="Icosahedron"){
+                Figure newFigure=createIcosahedron();
+                vector<double> rgbKleur = configuration["Figure"+to_string(i)]["color"].as_double_tuple_or_die();
+                Color kleurlijn;kleurlijn.red=rgbKleur[0];kleurlijn.green=rgbKleur[1];kleurlijn.blue=rgbKleur[2];
+                newFigure.color=kleurlijn;
+                result.fixFigure(figures3D,newFigure,configuration,i);
+            }
+            if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="Dodecahedron"){
+                Figure newFigure=createDodecahedron();
+                vector<double> rgbKleur = configuration["Figure"+to_string(i)]["color"].as_double_tuple_or_die();
+                Color kleurlijn;kleurlijn.red=rgbKleur[0];kleurlijn.green=rgbKleur[1];kleurlijn.blue=rgbKleur[2];
+                newFigure.color=kleurlijn;
+                result.fixFigure(figures3D,newFigure,configuration,i);
+            }
             if(configuration["Figure"+to_string(i)]["type"].as_string_or_die()=="Sphere"){
                 const int n=configuration["Figure"+to_string(i)]["n"].as_int_or_die();
                 Figure newFigure=createBol(1.0,n);
