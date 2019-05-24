@@ -9,6 +9,7 @@
 #include "Line_drawings_3D.h";
 #include "Figure3D.h"
 #include "Lsystemen_3D.h"
+#include "ZBuffer.h"
 
 using namespace std;
 
@@ -31,7 +32,7 @@ img::EasyImage generate_image(const ini::Configuration &configuration)
         lines=drawLSystem(l_system,kleur);
     }
 
-    if(type=="Wireframe"){
+    if(type=="Wireframe"||type=="ZBufferedWireframe"){
         Line_drawings_3D result;
         Figures3D figures3D;
         int nrFigures= configuration["General"]["nrFigures"].as_int_or_die();
@@ -152,8 +153,11 @@ img::EasyImage generate_image(const ini::Configuration &configuration)
 
         lines=result.doProjection(figures3D);
     }
+    if(type=="ZBufferedWireframe"){
+        return draw2DLines(lines,size,backgroundColor, true);
+    }
 
-	return draw2DLines(lines,size,backgroundColor);
+	return draw2DLines(lines,size,backgroundColor, false);
 }
 
 int main(int argc, char const* argv[])

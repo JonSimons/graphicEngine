@@ -1,8 +1,9 @@
 
 #include "L2D_systemen.h"
+#include "ZBuffer.h"
 
 
-img::EasyImage draw2DLines(const Lines2D& lines,const int size, img::Color backgroundColor){
+img::EasyImage draw2DLines(const Lines2D& lines,const int size, img::Color backgroundColor, bool zbuff){
     double xmin=lines.front().p1.x;
     double xmax=lines.front().p1.x;
     double ymin=lines.front().p1.y;
@@ -40,7 +41,13 @@ img::EasyImage draw2DLines(const Lines2D& lines,const int size, img::Color backg
     double dx = imagex/2.0-dcx;
     double dy = imagey/2.0-dcy;
 
-    img::EasyImage result(static_cast<int>(round(imagex)),static_cast<int>(round(imagey)),backgroundColor);
+    int width=static_cast<int>(round(imagex));
+    int height=static_cast<int>(round(imagey));
+
+    img::EasyImage result(width,height,backgroundColor);
+    ZBuffer zbuffer= ZBuffer(width,height);
+
+
     for(lines_2D line: lines){
         line.p1.x*=d;
         line.p1.y*=d;
@@ -52,15 +59,20 @@ img::EasyImage draw2DLines(const Lines2D& lines,const int size, img::Color backg
         line.p2.x+=dx;
         line.p2.y+=dy;
 
+        int x0=round(line.p1.x);
+        int y0=round(line.p1.y);
+        int x1=round(line.p2.x);
+        int y1=round(line.p2.y);
+
+
         img::Color color(static_cast<int>(round(line.color.red*255)),static_cast<int>(round(line.color.green*255)),static_cast<int>(round(line.color.blue*255)));
-        result.draw_line(static_cast<int>(round(line.p1.x)),static_cast<int>(round(line.p1.y)),static_cast<int>(round(line.p2.x)),static_cast<int>(round(line.p2.y)),color);
-
+        if(zbuff){
+            zbuffer.draw_zbuf_line(zbuffer,result,x0,y0,line.z1,x1,y1,line.z2,color);
+        }
+        else{
+            result.draw_line(static_cast<int>(round(line.p1.x)),static_cast<int>(round(line.p1.y)),static_cast<int>(round(line.p2.x)),static_cast<int>(round(line.p2.y)),color);
+        }
     }
-
-
-
-
-
     return result;
 }
 Lines2D drawLSystem(const LParser::LSystem2D &l_system, Color kleur){

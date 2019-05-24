@@ -81,6 +81,8 @@ Lines2D Line_drawings_3D::doProjection(const Figures3D& figures3D) {
                 line2D.p1=doProjection(figure.points[face.point_indexes[i]],1.0);
                 line2D.p2=doProjection(figure.points[face.point_indexes[i+1]],1.0);
                 line2D.color=figure.color;
+                line2D.z1=figure.points[face.point_indexes[i]].z;
+                line2D.z2=figure.points[face.point_indexes[i+1]].z;
                 lines2D.push_back(line2D);
             }
             if(face.point_indexes.size()>2){
@@ -88,6 +90,8 @@ Lines2D Line_drawings_3D::doProjection(const Figures3D& figures3D) {
                 line2D.p1=doProjection(figure.points[face.point_indexes[face.point_indexes.size()-1]],1.0);
                 line2D.p2=doProjection(figure.points[face.point_indexes[0]],1.0);
                 line2D.color=figure.color;
+                line2D.z1=figure.points[face.point_indexes[face.point_indexes.size()-1]].z;
+                line2D.z2=figure.points[face.point_indexes[0]].z;
                 lines2D.push_back(line2D);
             }
         }

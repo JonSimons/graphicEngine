@@ -10,104 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0bb80a4-f07a-4291-a824-1e0c3c3ee887" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lsystemen_3D.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lsystemen_3D.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZBuffer.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZBuffer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure3D.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Figure3D.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure3D.h" beforeDir="false" afterPath="$PROJECT_DIR$/Figure3D.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Figure3D.o" beforeDir="false" afterPath="$PROJECT_DIR$/Figure3D.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L2D_systemen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/L2D_systemen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L2D_systemen.h" beforeDir="false" afterPath="$PROJECT_DIR$/L2D_systemen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L2D_systemen.o" beforeDir="false" afterPath="$PROJECT_DIR$/L2D_systemen.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Line_drawings_3D.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Line_drawings_3D.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Line_drawings_3D.o" beforeDir="false" afterPath="$PROJECT_DIR$/Line_drawings_3D.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine" beforeDir="false" afterPath="$PROJECT_DIR$/engine" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine.cc" beforeDir="false" afterPath="$PROJECT_DIR$/engine.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine.o" beforeDir="false" afterPath="$PROJECT_DIR$/engine.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/Fig20_1.L3D" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/Fig20_2.L3D" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/Hilbert.L3D" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes001.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes001.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes002.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes002.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes003.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes003.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes004.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes004.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes005.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes005.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes006.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes006.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes007.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes007.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes008.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes008.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes009.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes009.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes010.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes010.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes011.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes011.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes012.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes012.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes013.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes013.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes014.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes014.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes015.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes015.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes016.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes016.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes017.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes017.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes018.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes018.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes019.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes019.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes020.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes020.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes021.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes021.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes025.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes025.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes026.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes026.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes029.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes029.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes030.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes030.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes031.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes031.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes032.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes032.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes036.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes036.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes037.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes037.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes038.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes038.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes039.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes039.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes040.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes040.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes041.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes041.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes042.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes042.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes043.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes043.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes044.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes044.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes045.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes045.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes046.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes046.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes047.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes047.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes048.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes048.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes049.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes049.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes050.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes050.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes051.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes051.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes052.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes052.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes053.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes053.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes054.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes054.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes055.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes055.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes056.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes056.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes057.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes057.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes058.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes058.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes059.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes059.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes060.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes060.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes061.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes061.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes062.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes062.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes063.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes063.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes064.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes064.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes065.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes065.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes066.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes066.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes067.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes067.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes068.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes068.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes069.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes069.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes070.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes070.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes071.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes071.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes072.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes072.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes073.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes073.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes074.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes074.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes075.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes075.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes076.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes076.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes077.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes077.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes078.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes078.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes079.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes079.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes080.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes080.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes081.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes081.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes082.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes082.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes083.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes083.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes084.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes084.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes085.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes085.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes086.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes086.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes087.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes087.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes088.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes088.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes089.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes089.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes090.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes090.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes091.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes091.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes092.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes092.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes093.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes093.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireframes/wireframes094.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wireframes/wireframes094.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lines_2D.h" beforeDir="false" afterPath="$PROJECT_DIR$/lines_2D.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wireframes.tar.gz" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/engine.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+            <state relative-caret-position="585">
+              <caret line="159" column="56" selection-start-line="159" selection-start-column="56" selection-end-line="159" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -129,26 +44,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L2D_systemen.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Lsystemen_3D.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="103" column="54" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
+            <state relative-caret-position="540">
+              <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
+              <folding>
+                <element signature="e#1#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lsystemen_3D.h">
+        <entry file="file://$PROJECT_DIR$/L2D_systemen.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="146" selection-start-line="10" selection-start-column="146" selection-end-line="10" selection-end-column="146" />
+            <state relative-caret-position="210">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ZBuffer.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="149" selection-start-line="18" selection-start-column="149" selection-end-line="18" selection-end-column="149" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ZBuffer.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -160,6 +87,7 @@
       <find>.x</find>
       <find>icosahedron</find>
       <find>bol</find>
+      <find>Zb</find>
     </findStrings>
     <replaceStrings>
       <replace>.z</replace>
@@ -174,20 +102,24 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Line_drawings_3D.h" />
-        <option value="$PROJECT_DIR$/Line_drawings_3D.cpp" />
         <option value="$PROJECT_DIR$/Figure3D.cpp" />
         <option value="$PROJECT_DIR$/Figure3D.h" />
-        <option value="$PROJECT_DIR$/L2D_systemen.cpp" />
-        <option value="$PROJECT_DIR$/engine.cc" />
         <option value="$PROJECT_DIR$/Lsystemen_3D.h" />
         <option value="$PROJECT_DIR$/Lsystemen_3D.cpp" />
+        <option value="$PROJECT_DIR$/lines_2D.h" />
+        <option value="$PROJECT_DIR$/Line_drawings_3D.cpp" />
+        <option value="$PROJECT_DIR$/engine.cc" />
+        <option value="$PROJECT_DIR$/L2D_systemen.h" />
+        <option value="$PROJECT_DIR$/L2D_systemen.cpp" />
+        <option value="$PROJECT_DIR$/ZBuffer.cpp" />
+        <option value="$PROJECT_DIR$/ZBuffer.h" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
-    <option name="width" value="927" />
+    <option name="width" value="928" />
     <option name="height" value="1055" />
   </component>
   <component name="ProjectView">
@@ -239,18 +171,19 @@
       <workItem from="1558444766569" duration="3818000" />
       <workItem from="1558521682298" duration="5618000" />
       <workItem from="1558547336495" duration="4710000" />
-      <workItem from="1558596921262" duration="9857000" />
+      <workItem from="1558596921262" duration="19611000" />
+      <workItem from="1558693361511" duration="1053000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30544000" />
+    <option name="totallyTimeSpent" value="41351000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="927" height="1055" extended-state="4" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.47619048" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.47559592" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -282,13 +215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Line_drawings_3D.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Figure3D.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -303,20 +229,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/L2D_systemen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="54" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/L2D_systemen.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lsystemen_3D.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -324,17 +236,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine.cc">
+    <entry file="file://$PROJECT_DIR$/Lsystemen_3D.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+        <state relative-caret-position="677">
+          <caret line="106" column="51" selection-start-line="106" selection-start-column="51" selection-end-line="106" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lsystemen_3D.cpp">
+    <entry file="file://$PROJECT_DIR$/Line_drawings_3D.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="103" column="54" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
+        <state relative-caret-position="481">
+          <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lines_2D.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="159" column="56" selection-start-line="159" selection-start-column="56" selection-end-line="159" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L2D_systemen.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
+          <folding>
+            <element signature="e#1#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L2D_systemen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZBuffer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="149" selection-start-line="18" selection-start-column="149" selection-end-line="18" selection-end-column="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ZBuffer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
