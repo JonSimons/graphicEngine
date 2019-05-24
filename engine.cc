@@ -155,6 +155,7 @@ img::EasyImage generate_image(const ini::Configuration &configuration)
     }
     if(type=="ZBufferedWireframe"){
         return draw2DLines(lines,size,backgroundColor, true);
+
     }
 
 	return draw2DLines(lines,size,backgroundColor, false);

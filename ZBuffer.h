@@ -12,11 +12,11 @@ using namespace std;
 class ZBuffer: public vector<vector<double>>{
     public:
         ZBuffer(const int width,const int height);
-        void draw_zbuf_line(ZBuffer &,img::EasyImage &,
+        void draw_zbuf_line(ZBuffer &zbuffer,img::EasyImage & image,
                              unsigned int x0, unsigned int y0, double z0,
                              unsigned int x1, unsigned int y1,
                              double z1,
-                            const img::Color &color);
+                            const img::Color& color);
     };
 
 

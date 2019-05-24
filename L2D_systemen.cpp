@@ -59,10 +59,10 @@ img::EasyImage draw2DLines(const Lines2D& lines,const int size, img::Color backg
         line.p2.x+=dx;
         line.p2.y+=dy;
 
-        int x0=round(line.p1.x);
-        int y0=round(line.p1.y);
-        int x1=round(line.p2.x);
-        int y1=round(line.p2.y);
+        int x0=static_cast<int>(round(line.p1.x));
+        int y0=static_cast<int>(round(line.p1.y));
+        int x1=static_cast<int>(round(line.p2.x));
+        int y1=static_cast<int>(round(line.p2.y));
 
 
         img::Color color(static_cast<int>(round(line.color.red*255)),static_cast<int>(round(line.color.green*255)),static_cast<int>(round(line.color.blue*255)));
@@ -89,6 +89,7 @@ Lines2D drawLSystem(const LParser::LSystem2D &l_system, Color kleur){
             if(a=='('||a==')'||a=='+' ||a=='-'){
                 replaced.push_back(a);
             }
+
             for(char character:alphabet ){
                 if(character==a){
                     replaced+=l_system.get_replacement(a);
